@@ -32,6 +32,9 @@
         #body{
             background-color: ;
         }
+        .birth{
+            width: 5%;
+        }
     </style>
 </head>
 
@@ -39,7 +42,7 @@
     <center>
         <h1 class="h2">Student Registration Form</h1>
     </center>
-    <form style="margin-left: 350px;" action="/Assignment 04/Congrats.html">
+    <form style="margin-left: 350px;" action="Assignment 04/Congrats.html">
         <label>
             Name:
             <input type="text" placeholder="Enter full name" style="margin-left: 95px;" class="input" required>
@@ -81,15 +84,15 @@
             <label style="margin: 44px;">
 
                 <label>
-                    <input type="text">
+                    <input type="number" maxlength="2" style="padding-left: 30px;" class="birth">
                 </label>
                 -
                 <label>
-                    <input type="text">
+                    <input type="number" maxlength="2" class="birth">
                 </label>
                 -
                 <label>
-                    <input type="text"> <i>(dd-mm-yyyy)</i>
+                    <input type="number" class="birth"> <i>(dd-mm-yyyy)</i>
                 </label>
             </label>
 
