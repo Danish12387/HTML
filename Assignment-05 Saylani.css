@@ -56,8 +56,11 @@ button{
     font-weight: bold;
     border: 1px solid black;
     border-radius: 7px;
-    background-color: white;
+    background-color: rgb(238, 238, 238);
     cursor: pointer;
+}
+button:hover{
+    background-color: white;
 }
 hr{
     width: 1200px;
