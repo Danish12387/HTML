@@ -1,17 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>HTML</title>
     <style>
-        a{
-            margin: 20px;
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: rgb(250, 230, 194);
         }
+
+        a {
+            /* margin: 20px; */
+            background-color: rgb(114, 74, 0);
+            padding: 5px 50px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+            transition: all .2s;
+        }
+        a:hover{
+            background-color: orange;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .web {
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 200px;
+            width: 250px;
+            margin: 50px;
+            background-color: antiquewhite;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+            position: relative;
+            opacity: .6;
+        }
+        .web:hover{
+            transform: scale(1.1);
+            opacity: 1;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .web::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            top: 0;
+            background-color: rgb(245, 195, 102);
+            opacity: .5;
+            height: 0%;
+            transition: all .2s ease-in-out;
+            z-index: -1;
+        }
+        .web:hover::before{
+            height: 100%;
+            
+        }
+        h2,
+        h3 {
+            margin: 0;
+            padding: 0;
+        }
+
     </style>
 </head>
+
 <body>
-    <a href="Assignement-02 Toursim.html">Tourism Website</a>
-    <a href="Assignment-01 cv.html">CV</a>
-    <a href="Assignement-03 Tables.html">Tables</a>
-    <a href="Assignment-04 Forms.html">Forms</a>
+    <div class="web" id="1">
+        <h2>Assignment-01</h2>
+        <h3>See My CV</h3>
+
+        <a href="../Assignment-01 cv.html">Click Here</a>
+
+    </div>
+    <div class="web" id="2">
+        <h2>Assignement-02</h2>
+        <h3>Go to Tourism Website</h3>
+        <a href="../Assignement-02 Toursim.html">Click Here</a>
+    </div>
+    <div class="web" id="3">
+        <h2>Assignement-03</h2>
+        <h3>See My Daily Schedule</h3>
+        <a href="../Assignement-03 Tables.html">Click Here</a>
+    </div>
+    <div class="web" id="4">
+        <h2>Assignment-04</h2>
+        <h3>Go to Form</h3>
+        <a href="../Assignment-04 Forms.html">Click Here</a>
+
+    </div>
+    <div class="web" id="5">
+        <h2>Assignment-05</h2>
+        <h3>Go to Saylani Container</h3>
+        <a href="../Assignement-05 Saylani.html">Click Here</a>
+    </div>
+    <div class="web" id="6">
+        <h2>Assignment-06</h2>
+        <h3>Go to Portfolio</h3>
+        <a href="../Assignment-06 Portfolio.html">Click Here</a>
+    </div>
+    <div class="web" id="7">
+        <h2>Assignment-07</h2>
+        <h3>Go to Saylani Website</h3>
+        <a href="../Assignment-07 Website.html">Click Here </a>
+    </div>
+    <div class="web" id="8">
+        <h2>Assignment-08</h2>
+        <h3>Go to Pepsi Website</h3>
+        <a href="../Assignment-08 Pepsi.html">Click Here</a>
+    </div>
 </body>
+
 </html>
