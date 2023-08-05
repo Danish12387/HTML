@@ -388,10 +388,13 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 82%;
+    width: 1100px;
+    /* min-width: 1000px; */
+    flex-wrap: wrap;
 }
 .container-2 .sub{
     flex: 1;
+    min-width: 500px;
 }
 .container-2 .container-2-text{
     flex: 1;
@@ -400,6 +403,7 @@ span{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-width: 300px;
 }
 .container-2 .container-2-text h1{
     margin: 0;
@@ -415,14 +419,27 @@ span{
     width: 526px;
     border-top-left-radius: 60px;
 }
+.container-2-boxes{
+    position: relative;
+    z-index: -1;
+    background-image: url(https://i.tribune.com.pk/media/images/2178912-image-1584559620/2178912-image-1584559620.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 450px;
+    border-top-left-radius: 60px;
+}
 .container-2-boxes .box{
-    height: 210px;
-    width: 263px;
+    height: 225px;
+    width: 250px;
     position: absolute;
+    /* background-color: green; */
 }
 .container-2-boxes #box1{
-    left: 121px;
-    top: 2167px;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
     border-right: 1px solid white;
     border-bottom: 1px solid white;
     border-left: 1px solid #8dc63f;
@@ -441,18 +458,20 @@ span{
     color: white;
 }
 .container-2-boxes #box2{
-    left: 383px;
-    top: 2168px;
+    left: 250px;
+    top: 0px;
     border-bottom: 1px solid white;
 }
 .container-2-boxes #box3{
-    left: 121px;
-    top: 2377px;
+    left: px;
+    top: 225px;
     border-right: 1px solid white;
-    width: 264px;
+    width: 251px;
 }
 .container-2-boxes #box4{
-    /* left: 383px; */
+    left: 250px;
+    top: 225px;
+    /* background-color: blue; */
 
 }
 .container-2-img{

@@ -39,6 +39,7 @@ body{
 .nav ul li a:hover{
     text-decoration: underline;
     color: aqua;
+    text-shadow: none;
 }
 .nav h3{
     margin-right: 50px;
@@ -54,7 +55,7 @@ body{
     font-size: 16px;
     cursor: pointer;
     box-shadow: 3px 3px 3px #007519;
-    transition: 0.2s ease-in;
+    transition: .3s ease-in-out;
 }
 .nav h3:hover{
     color: white;
@@ -66,7 +67,7 @@ body{
     align-items: center;
     flex: 1;
     /* background-color: greenyellow; */
-    font-family: satisfy;
+    font-family: Satisfy;
 }
 .logo img{
     height: 35px;
@@ -86,6 +87,8 @@ body{
     background-color: grey;
     padding-bottom: 10px;
     box-shadow: 3px 3px 3px lightslategray;
+    position: sticky;
+    top: 0;
 }
 .banner{
     display: flex;
